@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		color: #333;
+		font-family: "Microsoft Yahei";
+		font-size: 24px;
+		text-align: center;
+	}
+	.header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		background-color: rgb(216,34,13);
+	}
+	.one-middle {
+		margin: 50px auto 0;
+		width: 1190px;
+		height: 500px;
+		background-color: rgb(187,226,241);
+		line-height: 500px;
+	}
+	.fixed-middle {
+		margin: 0 auto;
+		width: 1190px;
+		background-color: rgb(254,220,94);
+		overflow: hidden;
+		line-height: 500px;
+	}
+	.fixed-middle .left {
+		float: left;
+		width: 80%;
+		height: 500px;
+		background-color: rgb(242,155,143);
+	}
+	.fixed-middle .right {
+		float: right;
+		width: 20%;
+		height: 500px;
+		background-color: rgb(248,195,143);
+	}
+	.auto-middle {
+		margin: 0 auto;
+		width: 50%;
+		line-height: 500px;
+		overflow: hidden;
+	}
+	.auto-middle .left {
+		float: left;
+		width: 33.333%;
+		height: 500px;
+		background-color: rgb(216,34,13);
+	}
+	.auto-middle .middle {
+		float: left;
+		width: 33.333%;
+		height: 500px;
+		background-color: rgb(187,226,241);
+	}
+	.auto-middle .right {
+		float: right;
+		width: 33.333%;
+		height: 500px;
+		background-color: rgb(62,189,224);
+	}
+	.absolute-middle {
+		position: relative;
+		margin: 0 auto;
+		min-width: 900px;
+		line-height: 500px;
+	}
+	.absolute-middle .left {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 250px;
+		height: 500px;
+		background-color: rgb(0,50,129);
+	}
+	.absolute-middle .middle {
+		margin-left: 260px;
+		margin-right: 310px;
+		height: 500px;
+		background-color: rgb(210,133,86);
+	}
+	.absolute-middle .right {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 300px;
+		height: 500px;
+		background-color: rgb(216,34,13);
+	}
+	.footer {
+		height: 100px;
+		background-color: rgb(240,131,31);
+		line-height: 100px;
+	}
+	.totop {
+		position: fixed;
+		z-index: 99;
+		bottom: 30px;
+		right: 30px;
+		width: 60px;
+		height: 60px;
+		border-radius: 10px;
+		background-color: #F4FE3F;
+		opacity: .6;
+		cursor: pointer;
+	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div>固定导航</div>
+	</div>
+	<div class="one-middle">一列自动居中布局</div>
+	<div class="fixed-middle">
+		<div class="left">两列布局-左</div>
+		<div class="right">两列布局-右</div>
+	</div>
+	<div class="auto-middle">
+		<div class="left">三列自动布局-左</div>
+		<div class="middle">三列自动布局-中</div>
+		<div class="right">三列自动布局-右</div>
+	</div>
+	<div class="absolute-middle">
+		<div class="left">三列中间自动布局-左</div>
+		<div class="middle">三列中间自动布局-中</div>
+		<div class="right">三列中间自动布局-右</div>
+	</div>
+	<div class="footer">底部</div>
+	<a href="#" class="totop"></a>
+</body>
+</html>
